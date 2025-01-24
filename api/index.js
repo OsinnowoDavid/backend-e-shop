@@ -22,7 +22,7 @@ connectcloudinary();
 
 // App config
 const app = express();
-
+  
 // Middleware
 app.use(cors({
   origin:["https://osinnowo-david-e-commerce-full-stack-j8sf.vercel.app"],
