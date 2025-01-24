@@ -14,7 +14,6 @@ const connectdb = async () => {
         const uri = `${process.env.MONGODB_URI}/e-commerceProject`;
         await mongoose.connect(uri, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
         });
         console.log("MongoDB connection established");
     } catch (error) {
