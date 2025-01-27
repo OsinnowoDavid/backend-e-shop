@@ -25,9 +25,14 @@ const app = express();
   
 // Middleware
 app.use(cors({
-  origin:["https://front111-e-commerce-full-stack-q3nw-ezicwj4cg.vercel.app"],
-  methods:["GET", "POST","DELETE", "PUT"],
-  credentials:true
+  // origin:"http://localhost:5173/"
+  // [""
+    // "https://front111-e-commerce-full-stack-q3nw-ezicwj4cg.vercel.app",
+    // 'https://osinnowo-david-e-commerce-full-stack-j8sf.vercel.app'
+  // ],
+  
+  // methods:["GET", "POST","DELETE", "PUT"],
+  // credentials:true
 }))
 app.use(cookieParser());
 app.use(express.json());

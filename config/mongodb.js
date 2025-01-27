@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config();
 const connectdb = async () => {
     try {
         mongoose.connection.on("connected", () => {
@@ -14,9 +14,7 @@ const connectdb = async () => {
         });
 
         const uri = `${process.env.MONGODB_URI}/e-commerceProject`;
-        await mongoose.connect(uri, {
-            useNewUrlParser: true,
-        });
+        await mongoose.connect(uri);
         console.log("MongoDB connection established");
     } catch (error) {
         console.error("Error connecting to MongoDB:", error.message);
